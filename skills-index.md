@@ -1,7 +1,7 @@
 ---
 name: skills-index
 description: Master index of all available skills with triggers and references. Load the relevant SKILL.md when a hook matches. Skills without a `last_updated` stamp are inactive.
-last_updated: 2026-09-05
+last_updated: 2026-10-09
 repo_version: bdf76c7
 ---
 
@@ -49,6 +49,14 @@ Before starting any task, check if the user might be referencing something from 
 |-------|-------|------|-----------|
 | MISSING | **librarian** | Open-source library questions, need implementation details with source references, understanding why something changed, authoritative code-backed answers | `~/.pi/agent/npm/node_modules/pi-web-access/skills/librarian/SKILL.md` |
 | 2026-08-11 | **hunk-review** | Reviewing agent-authored diffs in a live Hunk session, navigating files/hunks, adding inline review comments, reloading session contents. Trigger: "review with Hunk", "check the diff in Hunk", "add review notes to Hunk", user has Hunk running. | `~/.npm-global/lib/node_modules/hunkdiff/skills/hunk-review/SKILL.md` |
+
+### Always-on knowledge skills
+
+| Stamp | Skill | Hook | Reference |
+|-------|-------|------|-----------|
+| 2026-10-09 | **graphify** | Codebase/corpus architecture and structure questions, `/graphify` requests, GRAPH_REPORT.md, graph.json, wiki navigation, graph freshness | `~/.pi/agent/git/github.com/juhas96/graphify-pi/skills/graphify/SKILL.md` |
+| 2026-10-09 | **okf-rag** | Recall or verify any fact in the OKF knowledge base (exact concept IDs → STRONG, fuzzy RAG → WEAK), `/okf-rag`, `okf-rag query`/`update` | `~/.pi/agent/git/github.com/AdarGit008/okf-rag/skills/okf-rag/SKILL.md` |
+| 2026-10-09 | **repl-simple** | Sandboxed Python execution (`repl`), autonomous read-only investigation (`rlm`), or reasoning about sandbox limits/approvals | `~/.pi/agent/git/github.com/AdarGit008/repl-simple/skills/repl-simple/SKILL.md` |
 
 ---
 
